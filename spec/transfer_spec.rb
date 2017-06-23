@@ -1,3 +1,4 @@
+__END__
 require 'pry'
 describe 'Transfer' do
 

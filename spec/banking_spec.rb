@@ -1,3 +1,4 @@
+__END__
 describe "BankAccount" do
 
   let(:avi) { BankAccount.new("Avi") }
