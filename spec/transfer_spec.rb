@@ -1,6 +1,7 @@
 require 'pry'
 describe 'Transfer' do
 
+
   let(:avi) { BankAccount.new("Avi") }
   let(:amanda) { BankAccount.new("Amanda") }
   let(:transfer) { Transfer.new(amanda, avi, 50) }
