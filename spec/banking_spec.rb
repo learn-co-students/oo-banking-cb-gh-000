@@ -41,9 +41,9 @@ describe "BankAccount" do
   describe '#valid?' do
     it "is valid with an open status and a balance greater than 0" do
       @broke = BankAccount.new("Kat Dennings")
-      @broke.balance = 0
+      @broke.deposit(-1000)
       @closed = BankAccount.new("Beth Behrs")
-      @closed.status = "closed"
+      @closed.close_account
       expect(avi.valid?).to eq(true)
       expect(@broke.valid?).to eq(false)
       expect(@closed.valid?).to eq(false)
